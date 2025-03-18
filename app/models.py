@@ -11,3 +11,4 @@ class Order(Base):
     amount = Column(Float, nullable=False)  # Сумма заказа
     status = Column(String, default="pending")  # Статус заказа
     created_at = Column(DateTime, server_default=func.now())  # Дата создания
+    phone_number = Column(String, nullable=True)
